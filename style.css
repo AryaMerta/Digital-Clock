@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to top left, #0C356A, #74E291 ) !important;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shape2 {
+    background-image: linear-gradient(to bottom, #1A23FF, #FFC700) !important;
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+    position: absolute;
+    top: 48%;
+    left: 66%;
+}
+.shape1 {
+    position: absolute;
+    width: 360px;
+    top: 13%;
+    right: 62%;
+}
+.card {
+    width: 750px;
+    height: 222px;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+
+    position: absolute;
+    top: 35%;
+}
+.clock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.clock span {
+    font-size: 128px;
+    width: 650px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+.clock span::after {
+    font-size: 16px;
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+}
+#hrs::after {
+    content: 'HOURS';
+}
+#min::after {
+    content: 'MINUTES';
+}
+#sec::after {
+    content: 'SECONDS';
+}
